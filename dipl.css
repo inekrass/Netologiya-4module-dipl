@@ -10,7 +10,7 @@
   font-weight: bold; 
   font-style: normal;
 }
-body, h1, h6 {
+body, h1, h2, h6 {
   margin: 0;
   padding: 0;
 }
@@ -68,10 +68,6 @@ body, h1, h6 {
   flex-direction:row;
   flex-wrap:nowrap;
   gap:40px;
-  margin-right: 268px;
-  margin-top: 47px;
-  /* padding-top: 50px;
-  padding-right: 270px; */
 }
 .link_menu{
   font-family: 'OpenSansR', sans-serif;
@@ -98,17 +94,19 @@ body, h1, h6 {
   letter-spacing: 1.3px;
 }
 .list_blog{
-  padding: 70px 283px 0px 283px;
+  padding: 70px 0px 0px 283px;
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 243px;
+  gap: 137px;
 }
 .list_news{
+  width: 900px;
   display:flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 65px;
+  gap: 67px;
+  border: 1px solid red;
 }
 .content{
   max-height: 343px;
@@ -119,6 +117,7 @@ body, h1, h6 {
   flex-direction: row;
   flex-wrap: nowrap;
   height: 343px;
+  gap: 32px;
 }
 .blog_photo img {
   width: 442px;
@@ -126,13 +125,12 @@ body, h1, h6 {
   object-fit: cover;
 }
 .blog_text{
-  max-width: 420px;
+  max-width: 425px;
   max-height: 500px;
-  margin-left: 34px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 9px;
+  gap: 8px;
   
 }
 .block_tags{
@@ -158,10 +156,6 @@ body, h1, h6 {
   line-height:1.2;
   letter-spacing: 0.4px;
 }
-.blog_title h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .time_and_author{
   display: flex;
   flex-direction: row;
@@ -180,7 +174,7 @@ body, h1, h6 {
   font-size:14px;
 }
 .blog_content{
-  margin-top: 29px;
+  margin-top: 28px;
 }
 .content_text{
   font-family: 'OpenSansR', sans-serif;
@@ -189,19 +183,63 @@ body, h1, h6 {
   line-height:1.6;
   letter-spacing: 0.7px;
 }
-.side_bar h6{
+.side_bar{
+  width: 315px;
+  border: 1px solid red;
+}
+.side_header h6{
   font-family: 'OpenSansB', sans-serif;
   font-size:16px;
   text-transform: uppercase;
   position: relative;
   display: inline-block; /* чтобы линия была только под заголовком */
   margin-bottom: 15px;
+  text-align: center;
 }
-.side_bar h6::after {
+.side_header h6::after {
   content: "";
   display: block;
   width: 76px;        /* длина линии */
   height: 3px;        /* толщина */
   background: #e1d9bd;/* цвет */
   margin: 9px auto 0; /* авто-отступы слева/справа смещают в центр */
+  text-align: center;
+}
+.side_news{
+  margin-top: 18px;
+}
+.side_blog{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 22px;
+}
+.side_photo{
+  width: 81px;
+  height: 81px;
+}
+.side_photo img{
+  width: 81px;
+  height: 81px;
+  object-fit: cover;
+}
+.side_content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+}
+.side_time{
+  font-family: 'OpenSansR', sans-serif;
+  font-size:14px;
+  color: #888888;
+}
+.side_title {
+  font-family: 'OpenSansB', sans-serif;
+  text-transform: uppercase;
+  font-size:16px;
+  text-decoration:none;
+  color: #000000;
+  line-height:1.3;
+  letter-spacing: 0.2px;
 }
