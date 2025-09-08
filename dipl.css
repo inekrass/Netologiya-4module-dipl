@@ -207,8 +207,13 @@ body, h1, h2, h6 {
 }
 .side_news{
   margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 25px;
 }
 .side_blog{
+  width: 315px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
